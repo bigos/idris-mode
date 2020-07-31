@@ -1,0 +1,38 @@
+* Development notes
+
+This file is for notes that may be useful in idris-mode integration with Idris2.
+
+** Existing work
+
+*** Old idris-mode
+
+https://github.com/idris-hackers/idris-mode
+
+*** Vim Idris2 plugin
+
+https://github.com/edwinb/idris2-vim
+
+** Idris2 documentation
+
+https://idris2.readthedocs.io/en/latest/
+
+** Writing Emacs mode
+
+https://www.google.com/search?q=emacs+create+a+major+mode
+
+https://www.gnu.org/software/emacs/manual/html_node/elisp/Major-Modes.html
+
+** Running in Emacs
+
+For the development I link this folder to my starter-kit vendor folder.
+
+In scratch buffer I evaluate
+
+#+begin_src emacs-lisp
+(require 'idris-mode)
+#+end_src
+
+and open idris code file.
+
+Now M-x describe-mode in the idris code buffer should give you description of
+the mode key shortcuts.
