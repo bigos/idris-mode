@@ -36,3 +36,12 @@ and open idris code file.
 
 Now M-x describe-mode in the idris code buffer should give you description of
 the mode key shortcuts.
+
+*** reloading
+
+https://stackoverflow.com/questions/4359653/how-to-reload-an-emacs-major-mode
+
+#+begin_example
+M-x unload-feature
+idris-mode
+#+end_example
