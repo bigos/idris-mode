@@ -41,10 +41,15 @@ the mode key shortcuts.
 
 https://stackoverflow.com/questions/4359653/how-to-reload-an-emacs-major-mode
 
+evaluate this code in scratch buffer
+
 #+begin_src emacs-lisp
 (progn
   (unload-feature 'idris-mode)
   (require 'idris-mode))
 #+end_src
 
-TODO check about loading the mode again
+close idris code file
+
+Now M-x describe-mode in the idris code buffer should give you description of
+the mode key shortcuts.
