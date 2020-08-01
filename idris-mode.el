@@ -67,7 +67,7 @@
 
 (easy-menu-define idris-mode-menu idris-mode-map
   "Menu for the Idris major mode"
-  `("Idris"
+  `((if (idris-version-2-p) "Idris2" "Idris")  ;visible indication we are using Idris2
     ["New Project" idris-start-project t]
     "-----------------"
     ["Load file" idris-load-file t]
