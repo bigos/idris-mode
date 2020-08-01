@@ -33,7 +33,7 @@
 ;;; based on idris-interpreter-path
 ;;; because we do not know yet when we will need it
 (defun idris-version-2-p ()
-  "Tell us is we are running idris2."
+  "Tell us is we are using idris2."
   (if (null idris-version)
       (let ((version (shell-command-to-string (concat idris-interpreter-path " --version"))))
         ;; running first time, set the global variable
