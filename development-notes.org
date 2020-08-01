@@ -12,6 +12,10 @@ https://github.com/idris-hackers/idris-mode
 
 https://github.com/edwinb/idris2-vim
 
+*** Vim idris2 plugin development
+
+https://boxbase.org/entries/2019/sep/30/idris2-and-vim/
+
 ** Idris2 documentation
 
 https://idris2.readthedocs.io/en/latest/
