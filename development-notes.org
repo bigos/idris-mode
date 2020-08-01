@@ -41,7 +41,10 @@ the mode key shortcuts.
 
 https://stackoverflow.com/questions/4359653/how-to-reload-an-emacs-major-mode
 
-evaluate the progn for the feature that needs reloading in scratch buffer
+Find the progn for the feature that needs reloading
+place the cursor at the end and press C-x C-e.
+
+It works in org mode block or *scratch* buffer.
 
 #+begin_src emacs-lisp
 
