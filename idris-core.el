@@ -26,6 +26,18 @@
 ;;; Code:
 (require 'idris-compat)
 
+(defvar idris-version nil "version of the idris interpreter")
+
+(defun idris-version-2-p ()
+  "Tell us is we are running idris2."
+  (if (null idris-version)
+      (let ((version (shell-command-to-string (concat idris-interpreter-path " --version"))))
+        ;; running first time, set the global variable
+        (setq idris-version version)
+        (string-prefix-p "Idris 2" version)))
+  ;; we already checked Idris version
+  (string-prefix-p "Idris 2" idris-version))
+
 (defun idris-is-ident-char-p (ch)
   (or (and (<= ?a ch) (<= ch ?z))
       (and (<= ?A ch) (<= ch ?Z))
