@@ -37,7 +37,7 @@ and open idris code file.
 Now M-x describe-mode in the idris code buffer should give you description of
 the mode key shortcuts.
 
-*** reloading
+*** Reloading code without restarting Emacs
 
 https://stackoverflow.com/questions/4359653/how-to-reload-an-emacs-major-mode
 
@@ -71,6 +71,3 @@ evaluate the progn for the feature that needs reloading in scratch buffer
 #+end_src
 
 close idris code file and open it again
-
-Now M-x describe-mode in the idris code buffer should give you description of
-the mode key shortcuts.
