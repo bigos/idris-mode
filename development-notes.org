@@ -41,15 +41,36 @@ the mode key shortcuts.
 
 https://stackoverflow.com/questions/4359653/how-to-reload-an-emacs-major-mode
 
-evaluate this code in scratch buffer
+evaluate the progn for the feature that needs reloading in scratch buffer
 
 #+begin_src emacs-lisp
-(progn
-  (unload-feature 'idris-mode)
-  (require 'idris-mode))
+
+  (progn (unload-feature 'idris-commands t) (require 'idris-commands))
+  (progn (unload-feature 'idris-common-utils t) (require 'idris-common-utils))
+  (progn (unload-feature 'idris-compat t) (require 'idris-compat))
+  (progn (unload-feature 'idris-core t) (require 'idris-core))
+  (progn (unload-feature 'idris-events t) (require 'idris-events))
+  (progn (unload-feature 'idris-highlight-input t) (require 'idris-highlight-input))
+  (progn (unload-feature 'idris-hole-list t) (require 'idris-hole-list))
+  (progn (unload-feature 'idris-info t) (require 'idris-info))
+  (progn (unload-feature 'idris-ipkg-mode t) (require 'idris-ipkg-mode))
+  (progn (unload-feature 'idris-keys t) (require 'idris-keys))
+  (progn (unload-feature 'idris-log t) (require 'idris-log))
+  (progn (unload-feature 'idris-mode t) (require 'idris-mode))
+  (progn (unload-feature 'idris-prover t) (require 'idris-prover))
+  (progn (unload-feature 'idris-repl t) (require 'idris-repl))
+  (progn (unload-feature 'idris-settings t) (require 'idris-settings))
+  (progn (unload-feature 'idris-simple-indent t) (require 'idris-simple-indent))
+  (progn (unload-feature 'idris-syntax t) (require 'idris-syntax))
+  (progn (unload-feature 'idris-tests t) (require 'idris-tests))
+  (progn (unload-feature 'idris-tree-info t) (require 'idris-tree-info))
+  (progn (unload-feature 'idris-warnings-tree t) (require 'idris-warnings-tree))
+  (progn (unload-feature 'idris-warnings t) (require 'idris-warnings))
+  (progn (unload-feature 'inferior-idris t) (require 'inferior-idris))
+
 #+end_src
 
-close idris code file
+close idris code file and open it again
 
 Now M-x describe-mode in the idris code buffer should give you description of
 the mode key shortcuts.

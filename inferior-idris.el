@@ -43,7 +43,7 @@
 
 (defvar idris-words-of-encouragement
   `("Let the hacking commence!"
-    "Hacks and glory await!"
+    "Hacks and joy await!"
     "Hack and be merry!"
     ,(format "%s, this could be the start of a beautiful program."
              (idris-user-first-name))
