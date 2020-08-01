@@ -28,6 +28,10 @@
 
 (defvar idris-version nil "version of the idris interpreter")
 
+;;; function idris-get-idris-version expects running process
+;;; we need the version information when loading idris-mode
+;;; based on idris-interpreter-path
+;;; because we do not know yet when we will need it
 (defun idris-version-2-p ()
   "Tell us is we are running idris2."
   (if (null idris-version)
