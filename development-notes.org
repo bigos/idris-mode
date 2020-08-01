@@ -67,8 +67,8 @@ It works in org mode block or *scratch* buffer.
   (progn (unload-feature 'idris-syntax t) (require 'idris-syntax))
   (progn (unload-feature 'idris-tests t) (require 'idris-tests))
   (progn (unload-feature 'idris-tree-info t) (require 'idris-tree-info))
-  (progn (unload-feature 'idris-warnings-tree t) (require 'idris-warnings-tree))
   (progn (unload-feature 'idris-warnings t) (require 'idris-warnings))
+  (progn (unload-feature 'idris-warnings-tree t) (require 'idris-warnings-tree))
   (progn (unload-feature 'inferior-idris t) (require 'inferior-idris))
 
 #+end_src
