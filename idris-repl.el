@@ -260,7 +260,8 @@ Invokes `idris-repl-mode-hook'."
                       idris-input-start))
     (set markname (make-marker))
     (set-marker (symbol-value markname) (point)))
-  (idris-repl-update-banner))
+  (unless (idris-version-2-p)
+    (idris-repl-update-banner)))
 
 (defun idris-repl-return ()
   "Send command over to Idris."
